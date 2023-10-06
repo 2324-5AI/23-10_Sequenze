@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin:0px;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: orangered;
+    font-size:1.5vw;
+}
+
+@media screen and (max-width: 1100px){
+    aside{
+        width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    #stat{
+        width: 570px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    body{
+        font-size:4vw;
+    }
+
+    #stat{
+        width: 250px;
+    }
+}
+
+#spanOrdine{
+    color:yellow;
+    border:1px solid white;
+}
+
+body > header{
+    border:1px solid white;
+    font-size:10vw;
+}
+
+header, aside{
+    position: relative;
+    color:orange;
+    text-transform: uppercase;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+aside{
+    margin-right: 40px;
+}
+
+aside li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+aside a{
+    color:orange;
+}
+
+aside li:hover a{
+    transform: scale(2);
+    color:yellow;
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gioco, #anteprima, #sequenzaGiusta, #stat{
+    display: flex;
+    flex-direction: row;
+}
+
+#txtTitolo{
+    height: 40px;
+}
+
+.img{
+    width:200px;
+    height: 150px;
+    background-color: white;
+    border:1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#sequenzaGiusta > input{
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border:1px solid black;
+}
+
+button{
+    width: 200px;
+    height: 40px;
+    background-color: orange;
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+
+#stat{
+    flex-wrap: wrap;
+    height: 300px;
+    overflow-y: auto;
+    max-width: 900px;
+}
+
+#stat > div{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 250px;
+    height: fit-content;
+}
+
+#stat > div > div:first-child{
+    font-weight: bold;
+}
